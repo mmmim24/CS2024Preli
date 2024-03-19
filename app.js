@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -5,8 +6,7 @@ const Users = require("./models/userModel");
 const Trains = require("./models/trainModel");
 const Stations = require("./models/stationModel");
 
-const {PORT,MONGODB_URI} = process.env;
-
+const { PORT,MONGODB_URI } = process.env;
 
 const dbUrl = MONGODB_URI;
 
